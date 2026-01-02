@@ -1,0 +1,88 @@
+.custom-navbar {
+  background-color: black;
+  position: relative;
+  z-index: 1050;
+}
+
+.custom-navbar .nav-link {
+  color: white;
+}
+
+.custom-navbar .nav-item.active .nav-link {
+  color: orange;
+  font-weight: 600;
+}
+
+.logo-image {
+  height: 80px;
+  width: 80px;
+}
+
+.frontsection-bg {
+  background-image: url("https://res.cloudinary.com/dvrn01od1/image/upload/v1767350471/vecteezy_aromatic-chicken-biryani-with-crispy-drumsticks-dynamically_74380003_mx39ul.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .frontsection-bg {
+    background-position: center top;
+  }
+}
+
+.frontsection-heading {
+  color: orange;
+  font-size: 60px;
+  font-family: "Brush Script MT";
+  margin-top: 180px;
+  margin-left: -120px;
+}
+
+.front-page-paragraph,
+.front-page-paragraph2 {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.front-page-paragraph {
+  margin-left: -120px;
+}
+
+.front-page-paragraph2 {
+  margin-left: 350px;
+  text-align: left;
+}
+
+.buttonstyles,
+.buttonstyles2 {
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.buttonstyles {
+  margin-left: -120px;
+  margin-top: 10px;
+}
+
+.buttonstyles2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 138px;
+}
+
+.dropdown-menu {
+  z-index: 1100;
+}
