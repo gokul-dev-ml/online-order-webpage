@@ -13,98 +13,127 @@
   />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 
-  <title>Restaurant Landing Page</title>
+  <title>Bootstrap 4.5</title>
 </head>
-
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://res.cloudinary.com/dvrn01od1/image/upload/v1767347671/logo_2_mckuol.png"
+      alt="Restaurant Logo"
+      class="logo-image"
+    />
+  </a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavDropdown"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active" id="nav-home">
+        <a class="nav-link" href="javascript:void(0)"
+           onclick="showSection('sectionone','nav-home')">Home</a>
+      </li>
+
+      <li class="nav-item" id="nav-about">
+        <a class="nav-link" href="javascript:void(0)"
+           onclick="showSection('sectiontwo','nav-about')">About us</a>
+      </li>
+
+      <li class="nav-item" id="nav-menu">
+        <a class="nav-link" href="javascript:void(0)"
+           onclick="showSection('sectiontwo','nav-menu')">Menu</a>
+      </li>
+
+      <li class="nav-item" id="nav-orders">
+        <a class="nav-link" href="javascript:void(0)"
+           onclick="showSection('sectiontwo','nav-orders')">Orders</a>
+      </li>
+
+      <li class="nav-item" id="nav-offers">
+        <a class="nav-link" href="javascript:void(0)"
+           onclick="showSection('sectiontwo','nav-offers')">Special Offers</a>
+      </li>
+
+      <li class="nav-item dropdown" id="nav-profile">
+        <a class="nav-link dropdown-toggle"
+           href="javascript:void(0)"
+           onclick="setActive('nav-profile')"
+           data-toggle="dropdown">
+          Profile
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">My Profile</a>
+          <a class="dropdown-item" href="#">Address</a>
+          <a class="dropdown-item" href="#">Help</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- SECTION ONE -->
 <div id="sectionone">
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-    <a class="navbar-brand" href="#">
-      <img
-        src="https://res.cloudinary.com/dvrn01od1/image/upload/v1767347671/logo_2_mckuol.png"
-        alt="Restaurant Logo"
-        class="logo-image"
-      />
-    </a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNavDropdown"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Special offers</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-            Profile
-          </a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">My Profile</a>
-            <a class="dropdown-item" href="#">Address</a>
-            <a class="dropdown-item" href="#">Help</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Logout</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
   <div class="container-fluid frontsection-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 col-xl-7">
-          <h1 class="frontsection-heading">
-            Authentic South Indian <br /> Flavours
-          </h1>
-          <p class="front-page-paragraph">Hot • Spicy • Served Fresh</p>
-          <button class="buttonstyles">Order</button>
-        </div>
-      </div>
+      <h1 class="frontsection-heading">Authentic South Indian <br> Flavours</h1>
+      <p class="front-page-paragraph">Hot • Spicy • Served Fresh</p>
+      <button class="buttonstyles">Order</button>
 
-      <hr />
+      <p class="front-page-paragraph2">
+        Indian cuisine is a vibrant blend of spices, textures, and traditions.
+      </p>
 
-      <div class="d-flex justify-content-end">
-        <div class="col-12 col-lg-6 col-xl-7 ml-auto">
-          <p class="front-page-paragraph2">
-            Indian cuisine is a vibrant blend of spices, textures, and traditions.
-            Each dish is prepared using hand-picked ingredients, fresh herbs, and
-            time-honored cooking methods. Our focus is on authenticity and rich,
-            rooted flavors.
-          </p>
-          <button class="buttonstyles2 float-right">Contact Us</button>
-        </div>
-      </div>
+      <button class="buttonstyles2"
+              onclick="showSection('sectiontwo','nav-about')">
+        Contact Us
+      </button>
     </div>
   </div>
 </div>
 
-<!-- Scripts -->
+<!-- SECTION TWO -->
+<div id="sectiontwo">
+  <div class="container-fluid sectionaboutus-bg">
+    <h1 class="about-heading">About us</h1>
+  </div>
+</div>
+
+<!-- JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
-  document.querySelectorAll('.custom-navbar .nav-link').forEach(link => {
-    link.addEventListener('click', function () {
-      document.querySelectorAll('.custom-navbar .nav-item')
-        .forEach(item => item.classList.remove('active'));
-      this.parentElement.classList.add('active');
-    });
-  });
+  function showSection(sectionId, navId) {
+    document.getElementById('sectionone').style.display = 'none';
+    document.getElementById('sectiontwo').style.display = 'none';
+    document.getElementById(sectionId).style.display = 'block';
+
+    document.querySelectorAll('.nav-item')
+      .forEach(item => item.classList.remove('active'));
+
+    document.getElementById(navId).classList.add('active');
+  }
+
+  function setActive(navId) {
+    document.querySelectorAll('.nav-item')
+      .forEach(item => item.classList.remove('active'));
+    document.getElementById(navId).classList.add('active');
+  }
 </script>
 
 </body>
