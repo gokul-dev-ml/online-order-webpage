@@ -1,35 +1,33 @@
+/* Navbar */
 .custom-navbar {
-  background-color: black;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 1050;
 }
 
 .custom-navbar .nav-link {
-  color: white;
+  color: #ffffff;
 }
 
-.custom-navbar .nav-item.active .nav-link {
-  color: orange;
-  font-weight: 600;
+.custom-navbar .nav-item.active .nav-link,
+.custom-navbar .nav-link:hover {
+  color: #FFA500;
 }
 
+/* Logo */
 .logo-image {
   height: 80px;
   width: 80px;
 }
 
+/* Hero Section */
 .frontsection-bg {
   background-image: url("https://res.cloudinary.com/dvrn01od1/image/upload/v1767350471/vecteezy_aromatic-chicken-biryani-with-crispy-drumsticks-dynamically_74380003_mx39ul.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
-}
-
-@media (max-width: 768px) {
-  .frontsection-bg {
-    background-position: center top;
-  }
 }
 
 .frontsection-heading {
@@ -37,52 +35,42 @@
   font-size: 60px;
   font-family: "Brush Script MT";
   margin-top: 180px;
-  margin-left: -120px;
 }
 
+/* Text */
 .front-page-paragraph,
 .front-page-paragraph2 {
   color: white;
-  font-family: Arial, sans-serif;
   font-size: 18px;
 }
 
-.front-page-paragraph {
-  margin-left: -120px;
-}
-
-.front-page-paragraph2 {
-  margin-left: 350px;
-  text-align: left;
-}
-
+/* Buttons */
 .buttonstyles,
 .buttonstyles2 {
   background-color: orange;
   color: white;
-  font-size: 15px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   height: 40px;
   width: 120px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.buttonstyles {
-  margin-left: -120px;
-  margin-top: 10px;
+/* About Section */
+.sectionaboutus-bg {
+  background-image: url("https://res.cloudinary.com/dvrn01od1/image/upload/v1767360220/vecteezy_table-displaying-various-food-bowls_43175093-min_wfsgxq.jpg");
+  background-size: cover;
+  min-height: 100vh;
 }
 
-.buttonstyles2 {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-right: 138px;
+.about-heading {
+  color: orange;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 80px;
 }
 
-.dropdown-menu {
-  z-index: 1100;
-}
+/* Section Visibility */
+#sectionone { display: block; }
+#sectiontwo { display: none; }
